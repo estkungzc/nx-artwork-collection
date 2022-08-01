@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "artwork-collection-app": "apps/artwork-collection-app",
+    "artwork-collection-app-e2e": "apps/artwork-collection-app-e2e"
+  }
+}
