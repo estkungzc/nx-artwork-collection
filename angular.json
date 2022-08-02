@@ -3,6 +3,9 @@
   "version": 2,
   "projects": {
     "artwork-collection-app": "apps/artwork-collection-app",
-    "artwork-collection-app-e2e": "apps/artwork-collection-app-e2e"
+    "artwork-collection-app-e2e": "apps/artwork-collection-app-e2e",
+    "artwork-domain": "libs/artwork/domain",
+    "artwork-feature": "libs/artwork/feature",
+    "shared-ui-common": "libs/shared/ui-common"
   }
 }

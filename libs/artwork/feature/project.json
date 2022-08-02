@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/artwork/feature/src",
+  "prefix": "nx-artwork-collection",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/artwork/feature"],
+      "options": {
+        "jestConfig": "libs/artwork/feature/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/artwork/feature/**/*.ts",
+          "libs/artwork/feature/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

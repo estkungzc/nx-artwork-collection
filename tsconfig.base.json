@@ -14,7 +14,17 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-artwork-collection/artwork/domain": [
+        "libs/artwork/domain/src/index.ts"
+      ],
+      "@nx-artwork-collection/artwork/feature": [
+        "libs/artwork/feature/src/index.ts"
+      ],
+      "@nx-artwork-collection/shared/ui-common": [
+        "libs/shared/ui-common/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
