@@ -1,5 +1,3 @@
-
-
 # NxArtworkCollection
 
 This project was generated using [Nx](https://nx.dev).
@@ -15,6 +13,32 @@ This project was generated using [Nx](https://nx.dev).
 [10-minute video showing all Nx features](https://nx.dev/getting-started/intro)
 
 [Interactive Tutorial](https://nx.dev/react-tutorial/01-create-application)
+
+[Tactical Domain-Driven Design with Angular and Monorepos?](https://www.angulararchitects.io/en/aktuelles/tactical-domain-driven-design-with-monorepos/)
+
+[Manage state in Angular with an intentional synchronization strategy and handle error state](https://nx.dev/guides/misc-data-persistence)
+
+## Project Layouts
+
+```
+.
+├── apps
+│   ├── artwork-collection-app              # Core application
+│   └── artwork-collection-app-e2e          # End-to-end, integration tests (alternatively `e2e`)
+├── libs
+│   ├── artwork                             # Artwork Domain/Features
+│   │   ├── domain                          # Contains the domain models
+│   │   │    ├── +state                     # State management
+│   │   │    │   └── artworks
+│   │   │    ├── application                # Use case specific facades
+│   │   │    ├── entities                   # Data model
+│   │   │    └── infrastructure             # Data access
+│   │   └── feature                         # Contains components for an use case
+│   │        └── artwork-search             # Artwork collections with filter/sort features
+│   └── shared                              # Include general utility functions
+│       └── ui-common
+└── README.md
+```
 
 ## Adding capabilities to your workspace
 
@@ -86,11 +110,6 @@ Run `nx graph` to see a diagram of the dependencies of your projects.
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev/angular) to learn more.
-
-
-
-
-
 
 ## ☁ Nx Cloud
 
